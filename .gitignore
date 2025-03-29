@@ -1,0 +1,17 @@
+# Hugo default output directory
+/public/
+/resources/
+.hugo_build.lock
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Node modules
+node_modules/
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
