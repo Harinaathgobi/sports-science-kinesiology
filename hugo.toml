@@ -1,7 +1,15 @@
 baseURL = "https://harinaathgobi.github.io/sports-science-kinesiology/"
-languageCode = "en-us"
 title = "Sports Science & Kinesiology"
 theme = "PaperMod"
+
+# Language settings
+defaultContentLanguage = "en"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    languageCode = "en-us"
 
 # Enable Git info for lastmod
 enableGitInfo = true
@@ -10,7 +18,7 @@ enableGitInfo = true
 [params]
   # Site description
   description = "Comprehensive resources on sports science and kinesiology"
-  author = "Your Name"
+  author = "Harinaathgobi"
   
   # Default theme "auto", "light", or "dark"
   defaultTheme = "auto"
