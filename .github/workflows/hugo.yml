@@ -6,6 +6,10 @@ on:
     branches:
       - main  # Set a branch to deploy from
 
+# Add this permissions section
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -29,3 +33,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          publish_branch: gh-pages  # Explicitly specify the branch

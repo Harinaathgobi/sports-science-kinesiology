@@ -1,3 +1,84 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://harinaathgobi.github.io/sports-science-kinesiology/"
+languageCode = "en-us"
+title = "Sports Science & Kinesiology"
+theme = "PaperMod"
+
+# Enable Git info for lastmod
+enableGitInfo = true
+
+# Site parameters
+[params]
+  # Site description
+  description = "Comprehensive resources on sports science and kinesiology"
+  author = "Your Name"
+  
+  # Default theme "auto", "light", or "dark"
+  defaultTheme = "auto"
+  
+  # Show reading time
+  ShowReadingTime = true
+  
+  # Show table of contents
+  ShowToc = true
+  
+  # Show post navigation
+  ShowPostNavLinks = true
+  
+  # Show breadcrumbs
+  ShowBreadCrumbs = true
+  
+  # Show code copy buttons
+  ShowCodeCopyButtons = true
+  
+  # Display homepage info
+  [params.homeInfoParams]
+    Title = "Sports Science & Kinesiology"
+    Content = """
+    Welcome to a comprehensive resource on sports science and kinesiology.
+    
+    - Evidence-based articles and research
+    - Educational resources for students and professionals
+    - Visual guides and reference materials
+    """
+
+  # Social media links
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/Harinaathgobi/sports-science-kinesiology"
+
+# Menu items
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    identifier = "research"
+    name = "Research"
+    url = "/research/"
+    weight = 20
+  [[menu.main]]
+    identifier = "resources"
+    name = "Resources"
+    url = "/resources/"
+    weight = 30
+  [[menu.main]]
+    identifier = "media"
+    name = "Media"
+    url = "/media/"
+    weight = 40
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 50
+
+# Content taxonomies
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+# Pagination
+paginate = 10
