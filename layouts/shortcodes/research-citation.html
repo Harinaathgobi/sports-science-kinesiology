@@ -1,0 +1,13 @@
+<div class="research-citation">
+  <p class="citation-text">{{ .Get "text" }}</p>
+  <div class="citation-source">
+    {{ with .Get "authors" }}<span class="authors">{{ . }}</span>{{ end }}
+    {{ with .Get "year" }}<span class="year">({{ . }})</span>{{ end }}
+    {{ with .Get "title" }}<span class="title">{{ . }}.</span>{{ end }}
+    {{ with .Get "journal" }}<em class="journal">{{ . }},</em>{{ end }}
+    {{ with .Get "volume" }}<span class="volume">{{ . }}</span>{{ end }}
+    {{ with .Get "issue" }}({{ . }}),{{ end }}
+    {{ with .Get "pages" }}<span class="pages">{{ . }}.</span>{{ end }}
+    {{ with .Get "doi" }}<a href="https://doi.org/{{ . }}" class="doi">https://doi.org/{{ . }}</a>{{ end }}
+  </div>
+</div>

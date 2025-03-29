@@ -1,0 +1,14 @@
+<div class="exercise-demo">
+  <h4>{{ .Get "title" }}</h4>
+  <div class="exercise-media">
+    <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}">
+    {{ with .Get "video" }}
+    <div class="video-link">
+      <a href="{{ . }}">Watch Video Demonstration</a>
+    </div>
+    {{ end }}
+  </div>
+  <div class="exercise-description">
+    {{ .Inner }}
+  </div>
+</div>
