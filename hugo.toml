@@ -62,25 +62,15 @@ enableGitInfo = true
     url = "/"
     weight = 10
   [[menu.main]]
-    identifier = "research"
-    name = "Research"
-    url = "/research/"
-    weight = 20
-  [[menu.main]]
     identifier = "resources"
     name = "Resources"
     url = "/resources/"
-    weight = 30
-  [[menu.main]]
-    identifier = "media"
-    name = "Media"
-    url = "/media/"
-    weight = 40
+    weight = 20
   [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 50
+    weight = 30
 
 # Content taxonomies
 [taxonomies]
